@@ -1,4 +1,4 @@
--- 1. Create the 'customers' table for Manchester United Legends in a banking system
+-- 1. Create the 'Customers' table for Manchester United Legends in a banking system
 CREATE TABLE Customers (
     customer_id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
