@@ -1,4 +1,4 @@
-# Demonstrating my SQL database management capabilites
+# Demonstrating Proficiency in SQL Database Management System
 ## Creating-and-Managing-a-Database-for-Manchester-United-Legends
 ## 1. Create the `Customers` Table
 
