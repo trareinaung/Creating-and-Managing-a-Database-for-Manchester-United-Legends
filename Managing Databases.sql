@@ -11,7 +11,7 @@ CREATE TABLE Customers (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- 2. Create the 'bank_accounts' table for customer bank accounts
+-- 2. Create the 'BankAccounts' table for customer bank accounts
 CREATE TABLE BankAccounts (
     account_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_id INT,
@@ -22,8 +22,8 @@ CREATE TABLE BankAccounts (
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
 );
 
--- 3. Insert Manchester United Legends into the 'customers' table
-INSERT INTO customers (first_name, last_name, position, date_of_birth, email, phone_number, address)
+-- 3. Insert Manchester United Legends into the 'Customers' table
+INSERT INTO Customers (first_name, last_name, position, date_of_birth, email, phone_number, address)
 VALUES
 ('Peter', 'Schmeichel', 'Goalkeeper', '1963-11-18', 'peter.schmeichel@manutd.com', '555-0001', '1 Old Trafford, Manchester'),
 ('Gary', 'Neville', 'Right Back', '1975-02-18', 'gary.neville@manutd.com', '555-0002', '2 Old Trafford, Manchester'),
@@ -38,7 +38,7 @@ VALUES
 ('Wayne', 'Rooney', 'Striker', '1985-09-24', 'wayne.rooney@manutd.com', '555-0011', '11 Old Trafford, Manchester')
 ('Jaap', 'Stam', 'Center Back', '1972-07-17', 'jaap.stam@manutd.com', '555-0004', '4 Old Trafford, Manchester');
 -- 4. Insert corresponding bank account data into the 'bank_accounts' table
-INSERT INTO bank_accounts (customer_id, account_type, balance)
+INSERT INTO BankAccounts (customer_id, account_type, balance)
 VALUES
 (1, 'Checking', 20000.00),
 (2, 'Savings', 15000.00),
