@@ -1,6 +1,6 @@
 # Demonstrating my SQL database management capabilites
 ## Creating-and-Managing-a-Database-for-Manchester-United-Legends
-## 1. Creating the `Customers` Table
+## 1. Create the `Customers` Table
 
 This SQL code defines the structure of a `Customers` table in a database. It will store information about customers, including their names, positions, contact details, and creation time.
 ```
