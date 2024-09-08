@@ -17,7 +17,6 @@ CREATE TABLE BankAccounts (
     customer_id INT,
     account_type ENUM('Checking', 'Savings', 'Business') NOT NULL,
     balance DECIMAL(15, 2) DEFAULT 0.00,
-    account_status ENUM('Active', 'Inactive', 'Closed') DEFAULT 'Active',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
 );
