@@ -142,6 +142,24 @@ DROP TABLE IF EXISTS bank_accounts;
 ```
 TRUNCATE TABLE bank_accounts;
 ```
+## Safeguarding Data: Mastering Transactions with Rollbacks and Commits in MySQL
+- Start the transaction
+```START TRANSACTION```;
+
+- Try to drop the table (if no longer needed)
+```DROP TABLE IF EXISTS bank_accounts```;
+
+- Truncate the table (remove data but keep structure)
+```TRUNCATE TABLE bank_accounts```;
+
+## Decide based on a condition if you want to commit or roll back
+- You could check some condition here, e.g. if you want to ROLLBACK changes
+
+- ROLLBACK if needed (undo changes)
+```ROLLBACK```;
+
+- If everything is okay and changes should be saved by below code
+```COMMIT```;
 
 
 
