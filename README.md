@@ -1,5 +1,6 @@
 # Demonstrating Proficiency in SQL Database Management System
-## Creating-and-Managing-a-Database-for-Manchester-United-Legends
+## Creating and Managing an Imaginary Database of Manchester United Legends – Why Not? It's My Favorite Football Club!
+
 ## 1. Create the `Customers` Table
 
 This SQL code defines the structure of a `Customers` table in a database. It will store information about customers, including their names, positions, contact details, and creation time.
